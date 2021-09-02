@@ -1,0 +1,204 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MaMaster.master.cs" Inherits="MediTech.MaMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+
+
+
+<head runat="server">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hasta Bakımı</title>
+    <meta name="description" content="Hasta bakımında sağlık çalışanları">
+    <meta name="keywords" content="hasta bakıcı,hemşire, yatalak hasta bakımı, evde bakım">
+    <link rel="icon" href="Medilab/img/doctor.png" type="image/x-icon" style="width: 100%;">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Candal">
+    <link href="#" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="Medilab/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="Medilab/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="Medilab/css/style.css">
+    <link rel="stylesheet" href="Medilab/css/font-awesome.min.css">
+
+
+    <link href="Medilab2/assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+    <link href="Medilab2/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="Medilab2/assets/vendor/venobox/venobox.css" rel="stylesheet">
+    <link href="Medilab2/assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="Medilab2/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="Medilab2/assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="Medilab2/assets/css/AboutCss.css" rel="stylesheet">
+
+    <script type="text/javascript">
+        (function () {
+            var options = {
+                whatsapp: "05379173702", // WhatsApp number
+                call_to_action: "Merhaba, iletişim için tıklayınız.", // Call to action
+                position: "right", // Position may be 'right' or 'left'
+            };
+            var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+            var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+            s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+            var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+        })();
+    </script>
+    <!-- /GetButton.io widget -->
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+
+
+
+
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+    <form id="form1" runat="server">
+
+
+
+
+        <!--WhatsApp İletişim-->
+
+        <!--banner-->
+        <section id="banner" class="banner">
+            <div class="bg-color">
+                <nav class="navbar navbar-default navbar-fixed-top">
+                    <div class="container">
+                        <div class="col-md-12">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <a class="navbar-brand" href="#">
+                                    <img src="Medilab/img/logo3.png" class="img-responsive" style="width: 120px; margin-top: -14px;"></a>
+                            </div>
+                            <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+                                <ul class="nav navbar-nav">
+                                    <li class="active"><a href="MainPage.aspx">Ana Sayfa</a></li>
+                                    <li class=""><a href="MainPage.aspx">Hizmetler</a></li>
+                                    <li class=""><a href="MainPage.aspx">Hakkımızda</a></li>
+                                    <li class=""><a href="MainPage.aspx-team">Çalışanlar</a></li>
+                                    <li class=""><a href="Galerim.aspx">Galeri</a></li>
+                                    <li class=""><a href="Cihazlarım.aspx">Ekipmanlar</a></li>
+
+                                    <li class=""><a href="#contact">İletişim</a></li>
+
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <div class="container">
+                    <div class="row">
+                        <div class="banner-info">
+                            <div class="banner-logo text-center">
+                                <img src="Medilab/img/logo2.png" style="width: 220px;" class="img-responsive">
+                            </div>
+                            <div class="banner-text text-center">
+                                <h1 class="white">Sağlık sizin elinizde</h1>
+                                <p>
+                                    İşlerinde uzmanlaşmış sağlık destek ekibimiz ile sahadayız,
+                                <br>
+                                    sağlığın ulaşmadığı nokta kalmasın diye...
+                                </p>
+                                <a href="#contact" class="btn btn-appoint">Bizle iletişime geçin</a>
+                            </div>
+                            <div class="overlay-detail text-center">
+                                <a href="#service"><i class="fa fa-angle-down"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--/ banner-->
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+
+        <!--/ contact-->
+        <!--footer-->
+        <footer id="footer">
+
+            <div class="top-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-4 marb20">
+                            <div class="ftr-tle">
+                                <h4 class="white no-padding">Kurumsal</h4>
+                            </div>
+                            <div class="info-sec">
+                                <p>
+                                    Solak Sağlık Hizmeti olarak; kalitenin hedeflenmesi gereken bir şey değil, sürekli çalışarak ve emek ile ulaşılabilecek bir yer olduğunu biliyoruz.
+
+En yüksek kalite standartlarına ulaşabilmek için personellerimizi titizlikle seçmekte ve eğitmekteyiz.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 marb20">
+                            <div class="ftr-tle">
+                                <h4 class="white no-padding">Hizmetlerimiz</h4>
+                            </div>
+                            <div class="info-sec">
+                                <ul class="quick-info">
+                                    <li><a href="index.html"><i class="fa fa-circle"></i>Evde Bakım</a></li>
+                                    <li><a href="#service"><i class="fa fa-circle"></i>Yaşlı Bakımı</a></li>
+                                    <li><a href="#contact"><i class="fa fa-circle"></i>Refakatçi Hizmeti</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 marb20">
+                            <div class="ftr-tle">
+                                <h4 class="white no-padding">Bizi takip edin</h4>
+                            </div>
+                            <div class="info-sec">
+                                <ul class="social-icon">
+                                    <li class="bglight-blue"><i class="fa fa-facebook"></i></li>
+                                    <li class="bgred"><i class="fa fa-google-plus"></i></li>
+                                    <li class="bgdark-blue"><i class="fa fa-linkedin"></i></li>
+                                    <li class="bglight-blue"><i class="fa fa-twitter"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-line">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            © Copyright 2020. Her Hakkı Saklıdır.
+            <div class="credits">
+            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--/ footer-->
+
+        <script src="Medilab/js/jquery.min.js"></script>
+        <script src="Medilab/js/jquery.easing.min.js"></script>
+        <script src="Medilab/js/bootstrap.min.js"></script>
+        <script src="Medilab/js/custom.js"></script>
+        
+
+        <script src="Medilab2/assets/vendor/jquery/jqueryy.min.js"></script>
+        <script src="Medilab2/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="Medilab2/assets/vendor/jqueryy.easing/jquery.easing.min.js"></script>
+        
+        <script src="Medilab2/assets/vendor/venobox/venobox.min.js"></script>
+        <script src="Medilab2/assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+        <script src="Medilab2/assets/vendor/counterup/counterup.min.js"></script>
+        <script src="Medilab2/assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+        
+
+
+    </form>
+</body>
+</html>
